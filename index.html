@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIG4</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <section class="head">
+        <img src="./img/LIG4 (1).png" alt="logo">
+        <a id="information__btn">Informações</a>
+    </section>
+    <section id="openInformation" class="information">
+        <h1>Lig 4</h1>
+        <h2>Regras do jogo:</h2>
+        <p>Chame alguém para jogar com você e escolha entre as fichas pretas e vermelhas;</p>
+        <p>- Clique no botão da coluna que deseja jogar sua próxima ficha;</p>
+        <p>- Ganha quem enfileirar 4 fichas da mesma cor em linha horizontal, vertical ou diagonal.</p>
+        
+        <button id="popup__button">Fechar</button>
+    </section>
+
+<section>
+    <audio src="./audio/ficha_drop.wav" id="drop_sound"></audio>
+    <audio src="audio/cash-register-purchase.wav" id="victory_sound"></audio>
+</section>    
+<section id="game">
+    <div id="dv"></div>
+
+        <div class="modal--vitoria" id="modal">
+            <div class="modal__estili">
+                <p>Player red win!</p>
+            </div>
+        
+            <div class="modal__button">
+                <button id="reset">Jogar novamente</button>
+            </div>
+        </div>
+        <div class="modal--vitoria2" id="modal2">
+            <div class="modal__estili">
+                <p>Player black win!</p>
+            </div>
+        
+            <div class="modal__button">
+                <button id="reset2">Jogar novamente</button>
+            </div>
+        </div>
+        <div class="modal--empate" id="modal3">
+            <div class="modal__estili">
+                <p>Draw!!!</p>
+            </div>
+        
+            <div class="modal__button">
+                <button id="reset3">Reiniciar jogo</button>
+            </div>
+        </div>
+    
+</section>
+    
+    <footer>
+        <section class="footer">
+            <a href="https://www.linkedin.com/in/julia-gama-730566213/" class="name__link" target="blank"> <img src="./img/logotipo-do-linkedin-square.png" alt="linkedin" class="linkedin"> Julia Gama</a>
+            <a href="https://www.linkedin.com/in/ricardoliveira700/" class="name__link" target="blank"> <img src="./img/logotipo-do-linkedin-square.png" alt="linkedin" class="linkedin"> Ricardo Oliveira</a>
+            <a href="https://www.linkedin.com/in/joao-pedro-nonato-santos-2b8aa851/" class="name__link" target="blank"> <img src="./img/logotipo-do-linkedin-square.png" alt="linkedin" class="linkedin"> João Pedro</a>
+           <a href="https://www.linkedin.com/in/gabriel-gutierrez-b85996210/" class="name__link" target="blank"> <img src="./img/logotipo-do-linkedin-square.png" alt="linkedin" class="linkedin"> Gabriel Gutierrez</a>
+          
+       
+        </section>
+    </footer>
+    <script src="./js/vitoria.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script src="./js/modal.js"></script>
+
+    <script src="./js/jogadorVenceu.js"></script>
+</body>
+</html>
